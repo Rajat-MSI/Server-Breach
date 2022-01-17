@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Breach</title>
+    <link rel="stylesheet" href="style_second.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="icon" href="agent.png">
+</head>
+
+<body style="margin:0;" onload="gamePlay();">
+    <div class="navbar">
+        <h1 class="navbar-logo">SERVER BREACH</h1>
+    </div>
+    <div class="Instructions">
+        <h3 class="instruction1">Try to gain access to <span>Umbrella Inc.</span> Servers
+            and unfold the creepy secrets. Enter the Tri digit code with the help of</h3>
+        <h3 class="agent-geek" style="color:#50fa7b;">AGENT GEEK</h3>
+        <div class="hints">
+            <img src="agent.png" alt="Agent Geek" class="agent-pic">
+            <h3 class="firstHint">
+                "It seems like that the code is a combination of a number that sums to <span class="randomSum"></span>
+                also its accumulated value is <span class="randomProduct"></span> and remeber you have only
+                <span class="life"></span> chances"
+            </h3>
+        </div>
+        <!-- <h3 class="second hint"></h3> -->
+        <table style="margin: 0px auto;">
+            <tr>
+                <td colspan="4"><input type="text" class="codeDisplay" maxlength="3" readonly></td>
+                <!-- <td><input type="text" class="A code" maxlength="1" ></td>
+                <td><input type="text" class="B code" maxlength="1"></td>
+                <td><input type="text" class="C code" maxlength="1"></td>             -->
+            </tr>
+            <tr>
+                <td><input type="button" value="6" class="codeButton" onclick="insertCode('6')"></td>
+                <td><input type="button" value="7" class="codeButton" onclick="insertCode('7')"></td>
+                <td><input type="button" value="8" class="codeButton" onclick="insertCode('8')"></td>
+                <td><input type="button" value="9" class="codeButton" onclick="insertCode('9')"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" value="2" class="codeButton" onclick="insertCode('2')"></td>
+                <td><input type="button" value="3" class="codeButton" onclick="insertCode('3')"></td>
+                <td><input type="button" value="4" class="codeButton" onclick="insertCode('4')"></td>
+                <td><input type="button" value="5" class="codeButton" onclick="insertCode('5')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" class="codeButton" onclick="insertCode('1')"></td>
+                <td><input type="button" value="<<" class="codeButton" onclick="clearDisplay();"></td>
+                <td colspan="2"><input style="width:100%; " type="button" value="Access" onclick="main();"></td>
+            </tr>
+        </table>
+        <p class="playAgain"><a href="game_page.html">PLAY AGAIN</a></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
