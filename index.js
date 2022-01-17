@@ -135,11 +135,11 @@ for(var i=0; i<buttonLength; i++)
         var audio = new Audio("mainBeep.mp3");
         if((level - 2) == 3)
         {
-            audio = new Audio("welcome.wav");
+            audio = new Audio("accessgranted.wav");
         }
         else if(life === 0)
         {
-            audio = new Audio("secondBeep.wav");
+            audio = new Audio("gameover.wav");
         }
         audio.play();
     });
